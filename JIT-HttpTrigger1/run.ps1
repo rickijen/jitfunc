@@ -12,12 +12,11 @@ if (-not $name) {
     $name = $Request.Body.Name
 }
 
+########################## VARIABLES ###############################
 # Subscription ID
 $SubscriptionId = "7f3cc5e6-2fda-4486-b5c4-66de147a9f86"
-
 # User Assigned Managed Identity ID - retrieve from portal and need to run New-AzRoleAssignment -ObjectId <Obj ID of Client ID>
 $UAMIClientId = "f0897ee3-bfa6-4244-b04e-5490e19b70eb"
-
 # Variables for REST API calls
 $Apiversion = "2020-01-01"
 $JitNetworkAccessPolicyName = "default"
@@ -28,6 +27,7 @@ $VMName = "VM-Target"
 $JITAccessDuration = "PT5M"
 $JITAccessPort = 22
 $allowedSourceAddressPrefix = "47.149.128.121"
+####################################################################
 
 ####################################################################
 # Retrieve access token for Service Principal from OAuth2 endpoint
