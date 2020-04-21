@@ -68,7 +68,7 @@ $bodyJITRequest = @{
                 allowedSourceAddressPrefix=$allowedSourceAddressPrefix
             })
         })
-    justification = "Open port 22 for Apigee maintenance: $JITAccessDuration from $allowedSourceAddressPrefix"
+    justification = "Open port 22 for Apigee maintenance requested by $UAMIClientId : Duration $JITAccessDuration from $allowedSourceAddressPrefix"
 } | ConvertTo-Json -Depth 4
 
 # Write-Host "=================="
