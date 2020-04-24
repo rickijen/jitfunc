@@ -14,7 +14,7 @@ if (-not $name) {
 
 ########################## VARIABLES ###############################
 # Subscription ID
-$SubscriptionId = "7f3cc5e6-2fda-4486-b5c4-66de147a9f86"
+$SubscriptionId = "XXXXXXXX"
 # User Assigned Managed Identity ID - retrieve from portal and need to run New-AzRoleAssignment -ObjectId <Obj ID of Client ID>
 $UAMIClientId = "f0897ee3-bfa6-4244-b04e-5490e19b70eb"
 # Variables for REST API calls
