@@ -21,8 +21,8 @@ $role.AssignableScopes.Add("/subscriptions/7f3cc5e6-2fda-4486-b5c4-66de147a9f86/
 New-AzRoleDefinition -Role $role
 
 #
-# Assign the role to the AAD Object ID (must be a ServicePrincipal Type, cannot be Application)
-# User Assigned Managed Identity is considered a SP
+# Assign the role to the AAD Object ID (must be an ServicePrincipal Type, cannot be Application)
+# User Assigned Managed Identity is considered an SP
 #
 New-AzRoleAssignment -ObjectId e2a5ffc8-064b-41af-b038-e1d6c846e669 -RoleDefinitionName "Just In Time VM access User" -Scope "/subscriptions/7f3cc5e6-2fda-4486-b5c4-66de147a9f86/resourceGroups/JIT-demo/providers/Microsoft.Security/locations/westus/jitNetworkAccessPolicies/default"
 New-AzRoleAssignment -ObjectId e2a5ffc8-064b-41af-b038-e1d6c846e669 -RoleDefinitionName "Just In Time VM access User" -Scope "/subscriptions/7f3cc5e6-2fda-4486-b5c4-66de147a9f86/resourceGroups/JIT-demo/providers/Microsoft.Compute/virtualMachines/VM-Target"
