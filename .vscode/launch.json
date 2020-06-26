@@ -8,6 +8,11 @@
       "customPipeName": "AzureFunctionsPSWorker",
       "runspaceId": 1,
       "preLaunchTask": "func: host start"
+    },
+    {
+      "name": "Local Process with Kubernetes (Preview)",
+      "type": "dev-spaces-connect-configuration",
+      "request": "launch"
     }
   ]
 }
